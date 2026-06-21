@@ -8,8 +8,9 @@ import { userSchema } from "../schema/userSchema";
 import { UserContext } from "../context/UserContext";
 
 import { CustomInput, ProfileImageUploader } from "../components/utils";
+import { COUNTRIES } from "../constants/GeoPlaces";
 
-const countries = ["India", "USA", "Canada", "Germany"];
+const countries = COUNTRIES;
 
 const skillsList = ["React", "Node.js", "Java", "Python", "AWS"];
 
