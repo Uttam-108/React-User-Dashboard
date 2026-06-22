@@ -9,10 +9,11 @@ import { UserContext } from "../context/UserContext";
 
 import { CustomInput, ProfileImageUploader } from "../components/utils";
 import { COUNTRIES } from "../constants/GeoPlaces";
+import { SKILLS } from "../constants/Constants";
 
 const countries = COUNTRIES;
 
-const skillsList = ["React", "Node.js", "Java", "Python", "AWS"];
+const skillsList = SKILLS;
 
 function FormPage() {
   const navigate = useNavigate();
