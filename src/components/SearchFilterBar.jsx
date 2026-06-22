@@ -1,3 +1,5 @@
+import {COUNTRIES} from "../constants/GeoPlaces.js";
+
 function SearchFilterBar({
   search,
   setSearch,
@@ -76,10 +78,11 @@ function SearchFilterBar({
           "
         >
           <option value="">All Countries</option>
-          <option value="India">India</option>
-          <option value="USA">USA</option>
-          <option value="Canada">Canada</option>
-          <option value="Germany">Germany</option>
+          {COUNTRIES.map((country) => (
+            <option key={country} value={country}>
+              {country}
+            </option>
+          ))}
         </select>
 
         {/* Sort */}
